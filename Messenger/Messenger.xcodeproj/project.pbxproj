@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		D31288A12615317200875C44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D312889F2615317200875C44 /* Main.storyboard */; };
 		D31288A32615317300875C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31288A22615317300875C44 /* Assets.xcassets */; };
 		D31288A62615317300875C44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31288A42615317300875C44 /* LaunchScreen.storyboard */; };
+		D3F97184261540B80009A28F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3F97183261540B80009A28F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D31288A22615317300875C44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D31288A52615317300875C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D31288A72615317300875C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3F97183261540B80009A28F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,6 @@
 				A37E4B2776B785988968E927 /* Pods-Messenger.debug.xcconfig */,
 				9431A5D2BDA9B59758AF60E7 /* Pods-Messenger.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,6 +81,7 @@
 				D31288A22615317300875C44 /* Assets.xcassets */,
 				D31288A42615317300875C44 /* LaunchScreen.storyboard */,
 				D31288A72615317300875C44 /* Info.plist */,
+				D3F97183261540B80009A28F /* GoogleService-Info.plist */,
 			);
 			path = Messenger;
 			sourceTree = "<group>";
@@ -151,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F97184261540B80009A28F /* GoogleService-Info.plist in Resources */,
 				D31288A62615317300875C44 /* LaunchScreen.storyboard in Resources */,
 				D31288A32615317300875C44 /* Assets.xcassets in Resources */,
 				D31288A12615317200875C44 /* Main.storyboard in Resources */,
