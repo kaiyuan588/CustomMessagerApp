@@ -15,6 +15,8 @@
 		D31288A32615317300875C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31288A22615317300875C44 /* Assets.xcassets */; };
 		D31288A62615317300875C44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31288A42615317300875C44 /* LaunchScreen.storyboard */; };
 		D3E7195D26161E63004C7135 /*  Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7195C26161E63004C7135 /*  Constant.swift */; };
+		D3E719602616210D004C7135 /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7195F2616210D004C7135 /* FCollectionReference.swift */; };
+		D3E7196526162222004C7135 /* FirebaseUserListenser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7196426162222004C7135 /* FirebaseUserListenser.swift */; };
 		D3F97184261540B80009A28F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3F97183261540B80009A28F /* GoogleService-Info.plist */; };
 		D3F9718926156D980009A28F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9718826156D980009A28F /* User.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +34,8 @@
 		D31288A52615317300875C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D31288A72615317300875C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3E7195C26161E63004C7135 /*  Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Constant.swift"; sourceTree = "<group>"; };
+		D3E7195F2616210D004C7135 /* FCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
+		D3E7196426162222004C7135 /* FirebaseUserListenser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserListenser.swift; sourceTree = "<group>"; };
 		D3F97183261540B80009A28F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D3F9718826156D980009A28F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +82,7 @@
 		D31288982615317200875C44 /* Messenger */ = {
 			isa = PBXGroup;
 			children = (
+				D3E71962261621D7004C7135 /* FirebaseHelper */,
 				D3F9718B26156DA20009A28F /* Model */,
 				D31288992615317200875C44 /* AppDelegate.swift */,
 				D312889B2615317200875C44 /* SceneDelegate.swift */,
@@ -90,6 +95,15 @@
 				D3F97183261540B80009A28F /* GoogleService-Info.plist */,
 			);
 			path = Messenger;
+			sourceTree = "<group>";
+		};
+		D3E71962261621D7004C7135 /* FirebaseHelper */ = {
+			isa = PBXGroup;
+			children = (
+				D3E7195F2616210D004C7135 /* FCollectionReference.swift */,
+				D3E7196426162222004C7135 /* FirebaseUserListenser.swift */,
+			);
+			path = FirebaseHelper;
 			sourceTree = "<group>";
 		};
 		D3F9718B26156DA20009A28F /* Model */ = {
@@ -223,6 +237,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3E7196526162222004C7135 /* FirebaseUserListenser.swift in Sources */,
+				D3E719602616210D004C7135 /* FCollectionReference.swift in Sources */,
 				D3F9718926156D980009A28F /* User.swift in Sources */,
 				D312889E2615317200875C44 /* LoginViewController.swift in Sources */,
 				D3E7195D26161E63004C7135 /*  Constant.swift in Sources */,
