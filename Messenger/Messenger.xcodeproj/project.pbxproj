@@ -14,7 +14,9 @@
 		D31288A12615317200875C44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D312889F2615317200875C44 /* Main.storyboard */; };
 		D31288A32615317300875C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31288A22615317300875C44 /* Assets.xcassets */; };
 		D31288A62615317300875C44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31288A42615317300875C44 /* LaunchScreen.storyboard */; };
+		D3E7195D26161E63004C7135 /*  Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7195C26161E63004C7135 /*  Constant.swift */; };
 		D3F97184261540B80009A28F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3F97183261540B80009A28F /* GoogleService-Info.plist */; };
+		D3F9718926156D980009A28F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9718826156D980009A28F /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,9 @@
 		D31288A22615317300875C44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D31288A52615317300875C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D31288A72615317300875C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3E7195C26161E63004C7135 /*  Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " Constant.swift"; sourceTree = "<group>"; };
 		D3F97183261540B80009A28F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D3F9718826156D980009A28F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +78,11 @@
 		D31288982615317200875C44 /* Messenger */ = {
 			isa = PBXGroup;
 			children = (
+				D3F9718B26156DA20009A28F /* Model */,
 				D31288992615317200875C44 /* AppDelegate.swift */,
 				D312889B2615317200875C44 /* SceneDelegate.swift */,
 				D312889D2615317200875C44 /* LoginViewController.swift */,
+				D3E7195C26161E63004C7135 /*  Constant.swift */,
 				D312889F2615317200875C44 /* Main.storyboard */,
 				D31288A22615317300875C44 /* Assets.xcassets */,
 				D31288A42615317300875C44 /* LaunchScreen.storyboard */,
@@ -84,6 +90,14 @@
 				D3F97183261540B80009A28F /* GoogleService-Info.plist */,
 			);
 			path = Messenger;
+			sourceTree = "<group>";
+		};
+		D3F9718B26156DA20009A28F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D3F9718826156D980009A28F /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		D57E24ED62E86E8A149C1FD9 /* Frameworks */ = {
@@ -209,7 +223,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F9718926156D980009A28F /* User.swift in Sources */,
 				D312889E2615317200875C44 /* LoginViewController.swift in Sources */,
+				D3E7195D26161E63004C7135 /*  Constant.swift in Sources */,
 				D312889A2615317200875C44 /* AppDelegate.swift in Sources */,
 				D312889C2615317200875C44 /* SceneDelegate.swift in Sources */,
 			);
