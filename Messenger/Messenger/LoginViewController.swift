@@ -58,7 +58,7 @@ class LoginViewController: UIViewController {
     }
     @IBAction func forgotPasswordPressed(_ sender: Any) {
         if isDataInputedFor(type: "password") {
-            
+            resetPassword()
         }else {
             ProgressHUD.showFailed("Email is required")
         }
@@ -66,7 +66,7 @@ class LoginViewController: UIViewController {
     }
     @IBAction func resendEmailBtnPressed(_ sender: UIButton) {
         if isDataInputedFor(type: "password") {
-            
+            resendVerficationEmail()
         }else {
             ProgressHUD.showFailed("Email is required")
         }
@@ -156,6 +156,26 @@ class LoginViewController: UIViewController {
         }
     }
     
+    private func resetPassword() {
+        FirebaseUserListenser.shared.resetPassword(email: emailTextField.text!) { (error) in
+            if error == nil {
+                ProgressHUD.showSuccess("Reset link send to email")
+            }else {
+                ProgressHUD.showFailed(error!.localizedDescription)
+            }
+        }
+    }
+    
+    private func resendVerficationEmail() {
+        FirebaseUserListenser.shared.resendVerificationEmail(email: emailTextField.text!, completion: { (error) in
+            if error == nil {
+                ProgressHUD.showSuccess("New verification email sent")
+            }else {
+                ProgressHUD.showFailed(error!.localizedDescription)
+            }
+            
+        })
+    }
     private func loginUser() {
         FirebaseUserListenser.shared.loginUserWithEmail(email: emailTextField.text!, password: passwordTextField.text!) { (error, isEmailisVerified) in
             if error == nil {
@@ -163,6 +183,7 @@ class LoginViewController: UIViewController {
                     print("User has login \(User.currentUser!.email)")
                     
                     //Go to app
+                    self.goToApp()
                 }else {
                     ProgressHUD.showFailed("Please Verify Email")
                     self.resendEmailBtn.isHidden = false
@@ -171,6 +192,12 @@ class LoginViewController: UIViewController {
                 ProgressHUD.showFailed(error!.localizedDescription)
             }
         }
+    }
+    
+    //MARK -NAVIGATION
+    
+    private func goToApp(){
+        
     }
     
 
