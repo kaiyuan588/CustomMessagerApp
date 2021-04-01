@@ -84,10 +84,10 @@
 			children = (
 				D3E71962261621D7004C7135 /* FirebaseHelper */,
 				D3F9718B26156DA20009A28F /* Model */,
+				D3E7196726166615004C7135 /* Helper */,
 				D31288992615317200875C44 /* AppDelegate.swift */,
 				D312889B2615317200875C44 /* SceneDelegate.swift */,
 				D312889D2615317200875C44 /* LoginViewController.swift */,
-				D3E7195C26161E63004C7135 /*  Constant.swift */,
 				D312889F2615317200875C44 /* Main.storyboard */,
 				D31288A22615317300875C44 /* Assets.xcassets */,
 				D31288A42615317300875C44 /* LaunchScreen.storyboard */,
@@ -104,6 +104,14 @@
 				D3E7196426162222004C7135 /* FirebaseUserListenser.swift */,
 			);
 			path = FirebaseHelper;
+			sourceTree = "<group>";
+		};
+		D3E7196726166615004C7135 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				D3E7195C26161E63004C7135 /*  Constant.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		D3F9718B26156DA20009A28F /* Model */ = {
