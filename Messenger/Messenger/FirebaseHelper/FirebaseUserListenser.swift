@@ -30,8 +30,22 @@ class FirebaseUserListenser {
                 //create user and save
                 if authDataResult?.user != nil {
                     let user = User(id: authDataResult!.user.uid, userName: email, email: email, pushId: "", avatarLink: "", status: "Hey there I'm using messager")
+                    
+                    saveUserLocally(user: user)
+                    
+                    self.saveUserToFirestore(user)
                 }
             }
+        }
+    }
+    
+    //MARK -SAVE USERS
+    func saveUserToFirestore(_ user: User){
+        
+        do {
+            try FirebaseReference(.User).document(user.id).setData(from: user)
+        }catch {
+            print("adding suer error \(error.localizedDescription)")
         }
     }
 }
