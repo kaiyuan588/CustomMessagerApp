@@ -18,6 +18,7 @@
 		D3E719602616210D004C7135 /* FCollectionReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7195F2616210D004C7135 /* FCollectionReference.swift */; };
 		D3E7196526162222004C7135 /* FirebaseUserListenser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7196426162222004C7135 /* FirebaseUserListenser.swift */; };
 		D3E7196A261668B1004C7135 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3E71969261668B1004C7135 /* GoogleService-Info.plist */; };
+		D3E7197026169DF2004C7135 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7196F26169DF2004C7135 /* SettingsTableViewController.swift */; };
 		D3F9718926156D980009A28F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9718826156D980009A28F /* User.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		D3E7195F2616210D004C7135 /* FCollectionReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCollectionReference.swift; sourceTree = "<group>"; };
 		D3E7196426162222004C7135 /* FirebaseUserListenser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserListenser.swift; sourceTree = "<group>"; };
 		D3E71969261668B1004C7135 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D3E7196F26169DF2004C7135 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		D3F9718826156D980009A28F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,7 @@
 				D31288992615317200875C44 /* AppDelegate.swift */,
 				D312889B2615317200875C44 /* SceneDelegate.swift */,
 				D312889D2615317200875C44 /* LoginViewController.swift */,
+				D3E7196F26169DF2004C7135 /* SettingsTableViewController.swift */,
 				D312889F2615317200875C44 /* Main.storyboard */,
 				D31288A22615317300875C44 /* Assets.xcassets */,
 				D31288A42615317300875C44 /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 				D3E719602616210D004C7135 /* FCollectionReference.swift in Sources */,
 				D3F9718926156D980009A28F /* User.swift in Sources */,
 				D312889E2615317200875C44 /* LoginViewController.swift in Sources */,
+				D3E7197026169DF2004C7135 /* SettingsTableViewController.swift in Sources */,
 				D3E7195D26161E63004C7135 /*  Constant.swift in Sources */,
 				D312889A2615317200875C44 /* AppDelegate.swift in Sources */,
 				D312889C2615317200875C44 /* SceneDelegate.swift in Sources */,
