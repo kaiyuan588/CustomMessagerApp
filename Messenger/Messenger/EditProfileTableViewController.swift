@@ -89,6 +89,23 @@ class EditProfileTableViewController: UITableViewController {
         
         self.present(gallery, animated: true, completion: nil)
     }
+    //MARK - Upload Images
+    private func uploadAvatarImage(_ image: UIImage) {
+        
+        let fileDirectory = "Avatars/" + "_\(User.currentId)" + ".jpg"
+        
+        FireStorage.uploadImage(image, directory: fileDirectory) { (avatarLink) in
+            
+            if var user = User.currentUser{
+                user.avatarLink = avatarLink ?? ""
+                saveUserLocally(user: user)
+                FirebaseUserListenser.shared.saveUserToFirestore(user)
+            }
+            
+            //TODO: save image locally
+            
+        }
+    }
 }
 
 extension EditProfileTableViewController: UITextFieldDelegate {
@@ -118,6 +135,7 @@ extension EditProfileTableViewController: GalleryControllerDelegate {
             images.first!.resolve { (avatarImage) in
                 if avatarImage != nil {
                 //TODO: Upload image
+                    self.uploadAvatarImage(avatarImage!)
                     self.avatarImageView.image = avatarImage
                 
                 }else {

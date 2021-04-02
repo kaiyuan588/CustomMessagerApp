@@ -20,6 +20,7 @@
 		D3E7196A261668B1004C7135 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D3E71969261668B1004C7135 /* GoogleService-Info.plist */; };
 		D3E7197026169DF2004C7135 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E7196F26169DF2004C7135 /* SettingsTableViewController.swift */; };
 		D3E719732616AA53004C7135 /* EditProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E719722616AA53004C7135 /* EditProfileTableViewController.swift */; };
+		D3E719762616B64A004C7135 /* FireStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E719752616B64A004C7135 /* FireStorage.swift */; };
 		D3F9718926156D980009A28F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F9718826156D980009A28F /* User.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		D3E71969261668B1004C7135 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D3E7196F26169DF2004C7135 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		D3E719722616AA53004C7135 /* EditProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileTableViewController.swift; sourceTree = "<group>"; };
+		D3E719752616B64A004C7135 /* FireStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStorage.swift; sourceTree = "<group>"; };
 		D3F9718826156D980009A28F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				D3E7195F2616210D004C7135 /* FCollectionReference.swift */,
+				D3E719752616B64A004C7135 /* FireStorage.swift */,
 				D3E7196426162222004C7135 /* FirebaseUserListenser.swift */,
 			);
 			path = FirebaseHelper;
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3E7196526162222004C7135 /* FirebaseUserListenser.swift in Sources */,
+				D3E719762616B64A004C7135 /* FireStorage.swift in Sources */,
 				D3E719602616210D004C7135 /* FCollectionReference.swift in Sources */,
 				D3F9718926156D980009A28F /* User.swift in Sources */,
 				D312889E2615317200875C44 /* LoginViewController.swift in Sources */,
