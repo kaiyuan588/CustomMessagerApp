@@ -454,6 +454,9 @@
                                                         <constraint firstAttribute="height" constant="30" id="Jcl-aw-Mnm"/>
                                                     </constraints>
                                                     <state key="normal" title="Edit"/>
+                                                    <connections>
+                                                        <action selector="editBtnPressed:" destination="66p-99-yXm" eventType="touchUpInside" id="YaY-Mg-m9F"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
